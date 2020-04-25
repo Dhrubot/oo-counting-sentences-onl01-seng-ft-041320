@@ -18,6 +18,6 @@ class String
   end
 
   def count_sentences
-    self.scan(/\w+/).size
+    self.gsub(/,|'/, " ").split.size
   end
 end
