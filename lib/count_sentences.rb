@@ -22,8 +22,10 @@ class String
     count = 0 
     i = 0
     while i < string_array.length 
-      if (string)
+      count += 1 if (string_array[i].sentence? || string_array[i].question? || string_array[i].exclamation?)
+      i += 1
     end
     
+    count
   end
 end
