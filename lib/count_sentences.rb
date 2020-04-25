@@ -18,7 +18,12 @@ class String
   end
 
   def count_sentences
-    string_array = []
+    string_array = self.split
+    count = 0 
+    i = 0
+    while i < string_array.length 
+      if (string)
+    end
     
   end
 end
