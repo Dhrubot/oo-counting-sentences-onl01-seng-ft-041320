@@ -18,6 +18,6 @@ class String
   end
 
   def count_sentences
-    self.gsub(/,|'/, " ").split.size
+    self.split(/[\s,']/)
   end
 end
