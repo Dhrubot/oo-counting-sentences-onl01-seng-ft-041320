@@ -29,6 +29,6 @@ class String
       i+=1
    end
   
-  count
+    count
   end
 end
