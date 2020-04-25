@@ -18,6 +18,18 @@ class String
   end
 
   def count_sentences
-    self.scan(/\w+/).size
+    my_array=[]
+    my_array=self.split
+    puts my_array.uniq!.length
+    i=0
+    count=0
+    while i < my_array.length
+      if (my_array[i].sentence? || my_array[i].question? || my_array[i].exclamation?) then
+        count+=1
+      end
+      i+=1
+   end
+  
+  count
   end
 end
