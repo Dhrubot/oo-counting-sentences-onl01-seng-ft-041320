@@ -18,6 +18,6 @@ class String
   end
 
   def count_sentences
-    self.scan(/\w+/).reject {|x| x.empty?}.size
+    self.scan(/\w+/).reduce {|x| x.empty?}.size
   end
 end
